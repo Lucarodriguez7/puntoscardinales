@@ -207,6 +207,27 @@ export default function Preloader({ onFinish, fast = false }) {
           0% { left: -100%; }
           60%, 100% { left: 200%; }
         }
+
+        @media (max-width: 768px) {
+          .preloader-name {
+            font-size: 14px;
+            letter-spacing: 4px;
+            margin-left: 4px;
+            text-align: center;
+          }
+          .preloader-sub {
+            font-size: 8px;
+            letter-spacing: 4px;
+            margin-left: 4px;
+            text-align: center;
+          }
+          .preloader-text {
+            font-size: 7px;
+            letter-spacing: 3px;
+            margin-left: 3px;
+            text-align: center;
+          }
+        }
       `}</style>
 
             <div className="preloader" ref={overlayRef}>
